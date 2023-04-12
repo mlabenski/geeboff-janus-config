@@ -1,0 +1,33 @@
+general: {
+  configs_folder = "/usr/local/etc/janus"
+  plugins_folder = "/usr/local/lib/janus/plugins"
+  debug_level = 4
+}
+
+certificates: {
+  cert_pem = "/etc/letsencrypt/live/caninftthat.com/cert.pem"
+  cert_key = "/etc/letsencrypt/live/caninftthat.com/key.pem"
+}
+
+nat: {
+  stun_server = "stun.l.google.com"
+  stun_port = 19302
+}
+
+websockets: {
+  ws = true
+  ws_ip = "0.0.0.0"
+  ws_port = 8188
+  wss = true
+  wss_ip = "0.0.0.0"
+  wss_port = 8989
+}
+
+admin: {
+  admin_base_path = "/admin"
+  admin_secret = "janusoverlord412"
+}
+
+media: {
+  rtp_port_range = "20000-40000"
+}
